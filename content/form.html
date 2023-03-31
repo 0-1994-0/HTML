@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Template</title>
+</head>
+
+<body>
+    <div>
+        Vorname:
+        <input type="text" name="vorname" placeholder="Vorname" value="Conny" />
+    </div>
+    <div>
+        Passwort:
+        <input type="password" name="password" value="geheim" />
+    </div>
+    <div>
+        AGBs gelesen:
+        <input type="checkbox" name="agb" checked required />
+    </div>
+    <div>
+        Geschlecht:
+        <input type="radio" name="sex" value="F" required /> Weiblich
+        <input type="radio" name="sex" value="M" /> Männlich
+        <input type="radio" name="sex" value="X" /> X
+    </div>
+    <div>
+        Foto:
+        <input type="file" name="foto" />
+    </div>
+    <div>
+        Anmerkung:
+        <textarea name="comment" cols="50" rows="10" placeholder="Bitte Kommentare eingeben ..."></textarea>
+    </div>
+    <div>
+        Land:
+        <select name="country">
+            <option disabled selected>Bitte auswählen</option>
+            <option value="AT">Österreich</option>
+            <option value="DE">Deutschland</option>
+            <option value="CH">Schweiz</option>
+        </select>
+    </div>
+
+    <div>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+        >Exotische Inputs</a
+        >:
+        <input type="color" name="color" />
+        <input type="date" name="date" />
+        <input type="datetime-local" name="datetime-local" />
+        <input type="email" name="email" />
+        <input type="hidden" name="hidden" value="1234" />
+        <input type="month" name="month" />
+        <input type="number" name="number" />
+        <input type="time" name="time" />
+        </div>
+</body>
+<button type="submit">Abschicken</button>
+<button type="reset">Zurücksetzen</button>
+<button type="button">Nix</button>
+
+</html>
